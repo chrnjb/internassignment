@@ -35,6 +35,6 @@ def create_notification(notification: NotificationRequest):
 def read_user_notifications(user_id: str):
     return get_user_notifications(user_id)
 
-# @app.get("/")
-# def read_root():
-#     return {"message": "Welcome to the Notification Service API!"}
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the Notification Service API!"}
